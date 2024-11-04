@@ -5,12 +5,17 @@ header {
         width:100%;
         height: 47px;
     }
+    .navbar #toggle,
+    .navbar label {
+        display: none;
+    }
     .navbar {
         display: flex;
         justify-content:space-around;
         align-items: center;
         background-color: $color-azuloscuro;
         border: 1px solid #131E29;
+        font-family: "Roboto", sans-serif;
         .logo {
             width: 7rem;
         }

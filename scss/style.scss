@@ -6,6 +6,9 @@
 @import "./layout/gridcontainer";
 @import "./layout/video";
 @import "./layout/formulario";
+@import "./layout/media425";
+@import "./layout/media375";
+@import "./layout/media320";
 
 
 
@@ -19,4 +22,4 @@
 //utilities
 @import "./Utilities/extend";
 @import "./Utilities/mixin";
-@import "./Utilities/_variables"
+@import "./Utilities/_variables";
