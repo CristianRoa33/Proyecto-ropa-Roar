@@ -1,0 +1,10 @@
+@mixin flexible ($dis , $jus, $back, $border ,$marg){
+    display: $dis ;
+    justify-content: $jus;
+    background-color: $back;
+    border-top: $border;
+    margin: $marg;
+}
+footer {
+    @include flexible(flex,space-around ,#fff ,1px solid #131E29 ,1px)
+}

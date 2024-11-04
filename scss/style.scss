@@ -6,8 +6,8 @@
 @import "./layout/gridcontainer";
 @import "./layout/video";
 @import "./layout/formulario";
-@import "./layout/footer";
-@import "./layout/footer";
+
+
 
 //componentes
 @import "./components/titulosprin";
@@ -16,3 +16,7 @@
 @import "./components/datosform";
 @import "./components/cajasfooter";
 
+//utilities
+@import "./Utilities/extend";
+@import "./Utilities/mixin";
+@import "./Utilities/_variables"
