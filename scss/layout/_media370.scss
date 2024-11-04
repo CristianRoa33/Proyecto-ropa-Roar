@@ -1,4 +1,4 @@
-@media (max-width:425px) {
+@media (max-width:375px) {
     header {
         .Banner {
             width: 100%;
@@ -31,7 +31,7 @@
         } 
     }
     .Titulos {
-        font-size: 15px;
+        font-size: 10px;
         font-family: "Roboto", sans-serif;
         color: #FF0000;
     }
@@ -40,15 +40,19 @@
         font-family: "Roboto", sans-serif;
         color: #FF0000;
     }
+    .tallaropa label {
+        font-size: 10px;
+        margin: 10px;
+    }
     .tipo-prenda li {
         display: none;
     }
     section .grind-container {
-        font-size: 9px ;
+        font-size: 8px ;
         display: grid;
-        grid-template-columns: repeat(2, 170px);
+        grid-template-columns: repeat(2, 160px);
         margin: 10px 30px;
-        gap: 40px;
+        gap: 55px 5px;
         .AGREGAR {
             display: flex;
             justify-content: center;
@@ -57,16 +61,16 @@
             background-color: #fff;
             color: #FF0000;
             border: 2px solid #FF0000;
-            margin: 5px;
+            margin: 1px;
         }
     }
     section .videoclip {
-        width: 420px;
-        margin: 40px 3px;
+        width: 360px;
+        margin: 40px 8px;
     }
     section .formulario {
-        width: 400px;
-        margin: 50px 15px;
+        width: 350px;
+        margin: 50px 12px;
         padding: 5px 20px;
         display: flex;
         flex-direction: column;
@@ -81,7 +85,7 @@
             font-size: 2px;
         }
         .item {
-            font-size: 23px;
+            font-size: 20px;
         }
         .Suscribirme{
             width: 170px;

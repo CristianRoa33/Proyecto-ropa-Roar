@@ -31,14 +31,18 @@
         } 
     }
     .Titulos {
-        font-size: 15px;
+        font-size: 13px;
         font-family: "Roboto", sans-serif;
         color: #FF0000;
     }
     .Titulos1 {
-        font-size: 15px;
+        font-size: 13px;
         font-family: "Roboto", sans-serif;
         color: #FF0000;
+    }
+    .tallaropa label {
+        font-size: 10px;
+        margin: 10px;
     }
     .tipo-prenda li {
         display: none;
@@ -47,17 +51,17 @@
         font-size: 9px ;
         display: grid;
         grid-template-columns: repeat(2, 170px);
-        margin: 10px 30px;
-        gap: 40px;
+        margin: 2px 40px;
+        gap: 55px 5px;
         .AGREGAR {
             display: flex;
             justify-content: center;
-            width: 150px;
+            width: 144px;
             font-size: 10px;
             background-color: #fff;
             color: #FF0000;
             border: 2px solid #FF0000;
-            margin: 5px;
+            margin: 1px 1px;
         }
     }
     section .videoclip {
