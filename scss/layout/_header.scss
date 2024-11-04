@@ -1,0 +1,41 @@
+//header
+header {
+    .Banner {
+        width:100%;
+        height: 47px;
+    }
+    .navbar {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: #131E29;
+        border: 1px solid #131E29;
+        .logo {
+            width: 7rem;
+        }
+        .imgnavbar {
+            display: flex;
+            gap: 40px;
+            .iconos {
+                width: 2.5rem;
+            }
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                margin-right: 40px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 5px;
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+    }
+}

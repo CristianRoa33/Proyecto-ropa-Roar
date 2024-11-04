@@ -1,0 +1,869 @@
+section h1 {                                               
+    text-align: center;
+    font-size: 100%;
+    font-family:  "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    color: #ffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23cd2020' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: #820606;
+    padding: 10px;
+}
+section .Titulos h2 {
+    font-family:  "Roboto", sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+h1 span {
+    color: yellowgreen;
+}
+section .tallaropa {
+    font-family:  "Roboto", sans-serif;
+    font-size: 90% ;
+    font-weight: bold;
+    text-align: center;
+}
+section .tipo-prenda {                                    /*enlaces de prendas*/
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin: 50px 100px;
+    padding: 0px 40px;
+
+}
+section .tipo-prenda ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 2px;
+}
+section .tipo-prenda ul li {
+    margin: 0 15px;
+}
+section .tipo-prenda a {
+    color:rgb(161, 4, 4);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    transition: 0.5s;
+    font-weight: 500;
+    margin: 1px 10px;
+}
+section .tipo-prenda a:hover {
+    background-color: #fff;
+    border-style: dashed;
+    padding: 5px;
+    color: #000;
+}                                                   
+section .grind-container {                               /*grind de imagenes de prendas*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 50px 100px;
+    border: 1px solid #fff;
+}
+section .grind-container img {
+    width: 95%;
+    height: 80%;
+    object-fit: cover;
+}
+section .grid-item-01 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-01 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+}
+section .grid-item-02 h3 { 
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-02 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+}
+section .grid-item-03 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-03 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+}
+section .grid-item-04 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-04 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+}
+section .grid-item-01 a {                                                          /*enlaces de boton agregar*/
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-01 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-02 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-02 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-03 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-03 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-04 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-04 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}                                                           
+section .grind-contenedor {                                          /* imagenes para las otras paginas (hombre,mujer,niño,ofertas*/
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    grid-template-rows: repeat(4, fr);
+    margin: 50px 100px;
+    border: 1px solid #fff;
+}
+section .grind-contenedor img {
+    width: 95%;
+    height: 80%;
+}
+section .grid-item-05 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-05 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-05 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-05 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-06 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-06 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-06 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-06 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-07 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-07 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-07 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-07 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-08 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-08 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-08 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-08 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+section .grid-item-09 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-09 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-09 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-09 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-10 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-10 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-10 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-10 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-11 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-11 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-11 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-11 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+section .grid-item-12 a {                                                          
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    padding: 10px 1px;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+section .grid-item-12 h3 {
+    color: #787f86;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 2px;
+}
+section .grid-item-12 p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+section .grid-item-12 a:hover {
+    background-color: #EA0029;
+    border: 0px solid #EA0029;
+    color: #fff ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}   
+video{                                         /*video*/
+    width: 75%;
+}
+section .videoclip{                           /*video*/
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 1px 150px;
+    padding: 50px 50px;
+} 
+section .formulario {                      /*formulario*/
+    display: block;
+    background-color: #000;
+    flex-direction: row;
+    padding: 5px 50px ;
+    margin: 50px 500px;
+    border-radius: 1%;
+}
+section .formulario h2 {
+    color: #fff;
+    text-align: center ;
+    font-family: "Roboto", sans-serif;
+    font-size: 200%;
+    font-weight: 500;
+}
+section .formulario h3{
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+}
+section .formulario span {
+    color: rgb(153, 240, 22);
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+}
+section .datos{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+section .dato01{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align:initial;
+    color: #fff;
+}
+section .dato02{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+section .dato03{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+section .dato04{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+section .dato05{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+section .dato06{
+    padding: 10px;
+    background-color: #000;
+    margin: 1px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+section .Suscribirme{
+    width: 170px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    background-color: #EA0029;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    color: #fff;
+}
+section .formularios {                      
+    display: block;
+    background-color: #000;
+    flex-direction: row;
+    padding: 10px 100px ;
+    margin: 1px 500px;
+    border-radius: 1%;
+    width: 150%;
+}
+section .formularios h2 {
+    color: #fff;
+    text-align: center ;
+    font-family: "Roboto", sans-serif;
+    font-size: 200%;
+    font-weight: 500;
+}
+section .formularios h3{
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+}
+section .formularios span {
+    color: rgb(153, 240, 22);
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+}
+footer {                             /*footer*/
+    display: flex;
+    background-color: #fff;
+    border-top:0.5px solid #131E29;
+    margin: 1px;
+}
+footer .caja01{
+    display: flex;
+    width: 50%;
+    height: 15vh;
+    margin: 1px 25px;
+    color: #f0f0f0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .caja01 h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 1px;
+}
+.facebook {
+    width: 3rem;
+}
+.instagram {
+    width: 3rem;
+}
+footer .caja02{
+    display: flex;
+    width: 50%;
+    height: 15vh;
+    background-color: #ffff;
+    margin: 1px 25px;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .caja02 h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 4px;
+}
+footer .caja02 a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #787f86;
+    font-weight: 500;
+    margin: 4px;
+}
+.mensajes {
+    width: 1.5rem;
+}
+.telefono {
+    width: 1.5rem;
+}
+.ubicacion {
+    width: 1.5rem;
+}
+footer .caja03{
+    display: flex;
+    width: 50%;
+    height: 15vh;
+    background-color: #fff;
+    margin: 1px 25px;
+    color: #000;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .caja03 h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin: 4px;
+}
+footer .caja03 a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #787f86;
+    font-weight: 500;
+    margin: 4px;
+}
+.libro{
+    width: 1.5rem;
+}
+@media(max-width:425px){     /*celular*/
+    body {
+        font-size: 16px;
+    }
+    .Banner img {
+        width: 450px;
+        height: 20px;
+    }
+    header {
+        font-size: 10px
+    }
+    header {
+        display: flex;
+        flex-flow:column;
+    }
+    header .logo {
+        width: 5rem;
+    }
+    header .iconos{
+        display: none;
+    }
+    header a {
+        margin: 5px 2px;
+        font-size: 11px;
+    }
+    section h1 {
+        font-size: 20px;
+    }
+    section .tipo-prenda {
+        display: flex;
+        margin: 10px 30px;
+        height: 10vh;
+    }
+    section .tipo-prenda li {
+        font-size: 10px;
+    }
+    section .tipo-prenda a {
+        font-size: 120%;
+        margin: 0px 0px;
+    }
+    section .grind-container {
+        font-size: 250px ;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        margin: 0px 70px;
+    }
+    section .grind-container h3 {
+        font-size: 10px;
+    }
+    section .grind-container p {
+        font-size: 9px;
+        margin: 1.5px;
+    }
+    section .grid-item-01 a {
+        width: 140px;
+        font-size: 10px;
+        transition: none;
+    }
+    section .grid-item-02 a {
+        width: 140px;
+        font-size: 10px;
+        transition: none;
+    }
+    section .grid-item-03 a {
+        width: 140px;
+        font-size: 10px;
+        transition: none;
+    }
+    section .grid-item-04 a {
+        width: 140px;
+        font-size: 10px;
+    }
+    section .videoclip {
+        width: 450px;
+        margin: 1px 1px;
+    }
+    section .formulario {
+        font-size: 15px;
+        width: 400px;
+        margin: 5px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    section .formulario h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    section .formulario h3 {
+        font-size: 13px;
+        text-align: center;
+    }
+    section .formulario .datos {
+        font-size: 12px;
+        width: 400px;
+    }
+    footer {
+        width: 180px;
+        margin: 2px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100px;
+        border-top: 1px solid #131E29;
+    }
+    footer .caja01 h2 {
+        font-size: 20px;
+        margin: 10px 15px;
+    }
+    footer .caja01 a {
+        font-size: 5px;
+    }
+    .facebook {
+        width: 30px;
+    }
+    .instagram {
+        width: 30px;
+    }
+    footer .caja02 {
+        display: flex;
+        justify-content: center;
+        width: 130px;
+        margin: 1px 1px;
+    }
+    footer .caja02 a {
+        margin: 1px 100px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .telefono { 
+        width: 0rem;
+    }
+    .mensajes {
+        width:0px;
+    }
+    .ubicacion {
+        width: 0rem;
+    }
+    footer .caja02 h2 {
+        font-size: 20px;
+        margin: 1px;
+    }
+    footer .caja03 h3 {
+        font-size: 15px;
+        margin: 1px 20px;
+    }
+    footer .caja03 a {
+        margin: 1px 100px;
+        width: 150px;
+        text-align: center;
+    }
+}

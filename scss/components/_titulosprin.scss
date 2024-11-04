@@ -1,0 +1,30 @@
+//titulos principales/
+section {
+    h1 {                                               
+        text-align: center;
+        font-size: 100%;
+        font-family:  "Roboto", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0;
+        color: #ffff;
+        background-image: linear-gradient(to top, #131E29 ,#7142F3,#131E29);
+        padding: 15px;
+        span {
+            color: yellowgreen;
+        }
+    }
+    .Titulos h2 {
+        font-family:  "Roboto", sans-serif;
+        font-size: 250%;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+    }
+    .tallaropa {
+        font-family:  "Roboto", sans-serif;
+        font-size: 100% ;
+        font-weight: bold;
+        text-align: center;
+    } 
+}

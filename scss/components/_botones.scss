@@ -1,0 +1,57 @@
+ //botones enlaces*/
+.tipo-prenda {
+    display: flex;
+    justify-content: flex-start start;
+    align-items: flex-end;
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: 60px;
+        margin-top: 50px;
+        gap: 50px;
+        li {
+            margin-left: 20px;
+            a {
+                color: #00FFB2;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                transition: 0.5s;
+                margin: 2px;
+            }
+        }
+    }
+}
+.tipo-prenda a:hover {
+    background-color: #fff;
+    border-style:none;
+    color: #FF0000;
+    padding: 5px;
+    border-radius: 10%;
+}   
+section {
+    .AGREGAR {
+        display: flex;
+        justify-content:center;
+        width: 400px;
+        padding: 10px 1px;
+        margin: 2px;
+        font-family: "Roboto", sans-serif;
+        font-size: 80%;
+        font-weight: bold;
+        color: #fff;
+        background-color: #ffff;
+        border-radius: 1px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    a:hover {
+        background-color: #FF0000;
+        border: 0px solid #FF0000;
+        color: #fff ;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+}

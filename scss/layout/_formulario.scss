@@ -1,0 +1,58 @@
+//formulario pagina principal//
+section {
+    .formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #fff;
+    margin:10px 100px;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 0.5%;
+        h2 {
+            color: #fff;
+            text-align: center ;
+            font-family: "Roboto", sans-serif;
+            font-size: 60px;
+        }
+        h3{
+            color: #787F86;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+        }
+        span {
+            color: #00FF00;
+            font-family: "Roboto", sans-serif;
+            font-size: 130%;
+        }
+    }
+}
+//formulario demas paginas//
+section {
+    .formularios {
+        background-color: #111111;
+        width: 390%;
+        height: 110%;
+        margin-right: 80px;
+        border-radius: 0.5%;
+        color: #fff;
+        h2 {
+            color: #fff;
+            text-align: center ;
+            font-family: "Roboto", sans-serif;
+            font-size: 60px;
+        }
+        h3{
+            color: white;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+        }
+        span {
+            color: #00FF00;
+            font-family: "Roboto", sans-serif;
+            font-size: 130%;
+        }
+    }
+}
