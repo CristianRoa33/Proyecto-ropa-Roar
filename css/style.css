@@ -212,7 +212,7 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   header .Banner {
     width: 100%;
     object-fit: contain;
@@ -321,7 +321,7 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   header .Banner {
     width: 100%;
     object-fit: contain;
@@ -430,7 +430,7 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   header .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -456,37 +456,6 @@ section .formulario span {
   section .videoclip {
     width: 1001px;
     margin: 40px 12px;
-  }
-  section .formulario {
-    margin: 50px;
-  }
-}
-@media (width: 1366px) {
-  header .navbar {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  section .grind-container {
-    display: grid;
-    grid-template-columns: repeat(4, 320px);
-    margin: 10px 50px;
-    gap: 55px 5px;
-    font-size: 12px;
-  }
-  section .grind-container .AGREGAR {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-  }
-  section .tipo-prenda {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    margin: 1px 310px;
-  }
-  section .videoclip {
-    width: 1310px;
-    margin: 40px 25px;
   }
   section .formulario {
     margin: 50px;
