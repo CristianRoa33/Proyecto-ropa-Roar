@@ -1,0 +1,118 @@
+@media (width: 375px) {
+    header {
+        .Banner {
+            display: none;
+        }
+        .navbar .menu {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0;
+            }    
+        }
+        .navbar label {
+            display: inline-flex;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar #toggle:checked ~ .menu {
+            height: 100%;
+        }
+        .iconos{
+            display: none;
+        } 
+    }
+    .Titulos {
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        color: #FF0000;
+    }
+    .Titulos1 {
+        font-size: 11px;
+        font-family: "Roboto", sans-serif;
+        color: #FF0000;
+    }
+    .tallaropa label {
+        font-size: 8px;
+        margin: 8px;
+    }
+    .tipo-prenda {
+        display:flex;
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 2px 0px;
+            li { 
+                font-size: 1px ;
+                display: flex;
+                }
+        }
+    }
+    section .grind-container {
+        font-size: 8px ;
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        margin: 10px 30px;
+        gap: 55px 5px;
+        .AGREGAR {
+            display: flex;
+            justify-content: center;
+            width: 142px;
+            font-size: 10px;
+            background-color: #fff;
+            color: #FF0000;
+            border: 2px solid #FF0000;
+            margin: 1px;
+        }
+    }
+    section .videoclip {
+        width: 360px;
+        margin: 40px 8px;
+    }
+    section .formulario {
+        width: 350px;
+        margin: 50px 12px;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        h2 {
+            font-size: 25px;}
+        h3 {
+            font-size: 11px;}
+        .etiquetas {
+            font-size: 2px;}
+        .item {
+            font-size: 20px;}
+        .Suscribirme{
+            width: 170px;
+            height: 50px;
+            font-family: "Roboto", sans-serif;
+            font-size: 100%;
+            font-weight: 700;
+            border: 10px solid #f0f0f0;
+            border-radius: 10px;
+            color: #fff;
+            }            
+    }
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .caja02 a {
+            margin: 1px 100px;
+            font-size: 15px;
+            text-align: center;
+            }
+        .caja03 a {
+            margin: 1px 100px;
+            font-size: 15px;
+            text-align: center;
+        }
+        }
+}

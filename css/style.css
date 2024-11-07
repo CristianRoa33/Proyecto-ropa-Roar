@@ -103,12 +103,245 @@ section .formulario span {
   font-size: 130%;
 }
 
-@media (max-width: 425px) {
+@media (width: 320px) {
   header .Banner {
-    width: 100%;
-    object-fit: contain;
     display: none;
-    margin: 0 auto;
+  }
+  header .navbar .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+  header .navbar .menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  header .navbar label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  header .navbar #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  header .iconos {
+    display: none;
+  }
+  .Titulos {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .Titulos1 {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .tallaropa label {
+    font-size: 8px;
+    margin: 8px;
+  }
+  .tipo-prenda {
+    display: flex;
+  }
+  .tipo-prenda ul {
+    display: flex;
+    flex-flow: wrap;
+    margin: 2px 0px;
+  }
+  section .grind-container {
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    margin: 15px 8px;
+    gap: 50px 5px;
+  }
+  section .grind-container .AGREGAR {
+    display: flex;
+    justify-content: center;
+    width: 142px;
+    font-size: 10px;
+    background-color: #fff;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    margin: 1px;
+  }
+  section .videoclip {
+    width: 310px;
+    margin: 40px 6px;
+  }
+  section .formulario {
+    width: 300px;
+    margin: 41px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .formulario h2 {
+    font-size: 21px;
+  }
+  section .formulario h3 {
+    font-size: 11px;
+  }
+  section .formulario .etiquetas {
+    font-size: 2px;
+  }
+  section .formulario .item {
+    font-size: 20px;
+  }
+  section .formulario .Suscribirme {
+    width: 170px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    border: 10px solid #f0f0f0;
+    border-radius: 10px;
+    color: #fff;
+  }
+  footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  footer .caja02 a {
+    margin: 1px 100px;
+    font-size: 15px;
+    text-align: center;
+  }
+  footer .caja03 a {
+    margin: 1px 100px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media (width: 375px) {
+  header .Banner {
+    display: none;
+  }
+  header .navbar .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+  header .navbar .menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  header .navbar label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  header .navbar #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  header .iconos {
+    display: none;
+  }
+  .Titulos {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .Titulos1 {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .tallaropa label {
+    font-size: 8px;
+    margin: 8px;
+  }
+  .tipo-prenda {
+    display: flex;
+  }
+  .tipo-prenda ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0px;
+  }
+  .tipo-prenda ul li {
+    font-size: 1px;
+    display: flex;
+  }
+  section .grind-container {
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    margin: 10px 30px;
+    gap: 55px 5px;
+  }
+  section .grind-container .AGREGAR {
+    display: flex;
+    justify-content: center;
+    width: 142px;
+    font-size: 10px;
+    background-color: #fff;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    margin: 1px;
+  }
+  section .videoclip {
+    width: 360px;
+    margin: 40px 8px;
+  }
+  section .formulario {
+    width: 350px;
+    margin: 50px 12px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .formulario h2 {
+    font-size: 25px;
+  }
+  section .formulario h3 {
+    font-size: 11px;
+  }
+  section .formulario .etiquetas {
+    font-size: 2px;
+  }
+  section .formulario .item {
+    font-size: 20px;
+  }
+  section .formulario .Suscribirme {
+    width: 170px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    border: 10px solid #f0f0f0;
+    border-radius: 10px;
+    color: #fff;
+  }
+  footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  footer .caja02 a {
+    margin: 1px 100px;
+    font-size: 15px;
+    text-align: center;
+  }
+  footer .caja03 a {
+    margin: 1px 100px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (width: 425px) {
+  header .Banner {
+    display: none;
   }
   header .navbar .menu {
     width: 100%;
@@ -144,16 +377,28 @@ section .formulario span {
     color: #FF0000;
   }
   .tallaropa label {
-    font-size: 10px;
+    font-size: 12px;
     margin: 10px;
   }
   .tipo-prenda li {
     display: none;
   }
+  .tipo-prenda {
+    display: flex;
+  }
+  .tipo-prenda ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0px;
+  }
+  .tipo-prenda ul li {
+    font-size: 1px;
+    display: flex;
+  }
   section .grind-container {
     font-size: 9px;
     display: grid;
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 180px);
     margin: 2px 40px;
     gap: 55px 5px;
   }
@@ -212,12 +457,9 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (width: 460px) {
   header .Banner {
-    width: 100%;
-    object-fit: contain;
     display: none;
-    margin: 0 auto;
   }
   header .navbar .menu {
     width: 100%;
@@ -243,46 +485,58 @@ section .formulario span {
     display: none;
   }
   .Titulos {
-    font-size: 10px;
-    font-family: "Roboto", sans-serif;
-    color: #FF0000;
-  }
-  .Titulos1 {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     color: #FF0000;
   }
+  .Titulos1 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
   .tallaropa label {
-    font-size: 10px;
+    font-size: 13px;
     margin: 10px;
   }
   .tipo-prenda li {
     display: none;
   }
+  .tipo-prenda {
+    display: flex;
+  }
+  .tipo-prenda ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0px;
+  }
+  .tipo-prenda ul li {
+    font-size: 1px;
+    display: flex;
+  }
   section .grind-container {
-    font-size: 8px;
+    font-size: 12px;
     display: grid;
-    grid-template-columns: repeat(2, 160px);
-    margin: 10px 30px;
-    gap: 55px 5px;
+    grid-template-columns: repeat(2, 200px);
+    margin: 2px 40px;
+    gap: 55px 1px;
   }
   section .grind-container .AGREGAR {
     display: flex;
     justify-content: center;
-    width: 150px;
+    width: 190px;
     font-size: 10px;
     background-color: #fff;
     color: #FF0000;
     border: 2px solid #FF0000;
-    margin: 1px;
+    margin: 1px 1px;
   }
   section .videoclip {
-    width: 360px;
+    width: 445px;
     margin: 40px 8px;
   }
   section .formulario {
-    width: 350px;
-    margin: 50px 12px;
+    width: 435px;
+    margin: 50px 15px;
     padding: 5px 20px;
     display: flex;
     flex-direction: column;
@@ -298,7 +552,7 @@ section .formulario span {
     font-size: 2px;
   }
   section .formulario .item {
-    font-size: 20px;
+    font-size: 29px;
   }
   section .formulario .Suscribirme {
     width: 170px;
@@ -321,116 +575,7 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (max-width: 320px) {
-  header .Banner {
-    width: 100%;
-    object-fit: contain;
-    display: none;
-    margin: 0 auto;
-  }
-  header .navbar .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-  }
-  header .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  header .navbar label {
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  header .navbar #toggle:checked ~ .menu {
-    height: 100%;
-  }
-  header .iconos {
-    display: none;
-  }
-  .Titulos {
-    font-size: 10px;
-    font-family: "Roboto", sans-serif;
-    color: #FF0000;
-  }
-  .Titulos1 {
-    font-size: 11px;
-    font-family: "Roboto", sans-serif;
-    color: #FF0000;
-  }
-  .tallaropa label {
-    font-size: 8px;
-    margin: 8px;
-  }
-  .tipo-prenda li {
-    display: none;
-  }
-  section .grind-container {
-    font-size: 8px;
-    display: grid;
-    grid-template-columns: repeat(2, 150px);
-    margin: 15px 8px;
-    gap: 50px 5px;
-  }
-  section .grind-container .AGREGAR {
-    display: flex;
-    justify-content: center;
-    width: 142px;
-    font-size: 10px;
-    background-color: #fff;
-    color: #FF0000;
-    border: 2px solid #FF0000;
-    margin: 1px;
-  }
-  section .videoclip {
-    width: 310px;
-    margin: 40px 6px;
-  }
-  section .formulario {
-    width: 300px;
-    margin: 41px 10px;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  section .formulario h2 {
-    font-size: 20px;
-  }
-  section .formulario h3 {
-    font-size: 11px;
-  }
-  section .formulario .etiquetas {
-    font-size: 2px;
-  }
-  section .formulario .item {
-    font-size: 20px;
-  }
-  section .formulario .Suscribirme {
-    width: 170px;
-    height: 50px;
-    font-family: "Roboto", sans-serif;
-    font-size: 100%;
-    font-weight: 700;
-    border: 10px solid #f0f0f0;
-    border-radius: 10px;
-    color: #fff;
-  }
-  footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-  footer .caja02 a {
-    margin: 1px 100px;
-    font-size: 15px;
-    text-align: center;
-  }
-}
-@media (max-width: 1024px) {
+@media (width: 1024px) {
   header .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -461,37 +606,6 @@ section .formulario span {
     margin: 50px;
   }
 }
-@media (width: 1366px) {
-  header .navbar {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  section .grind-container {
-    display: grid;
-    grid-template-columns: repeat(4, 320px);
-    margin: 10px 50px;
-    gap: 55px 5px;
-    font-size: 12px;
-  }
-  section .grind-container .AGREGAR {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-  }
-  section .tipo-prenda {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    margin: 1px 310px;
-  }
-  section .videoclip {
-    width: 1310px;
-    margin: 40px 25px;
-  }
-  section .formulario {
-    margin: 50px;
-  }
-}
 section h1 {
   text-align: center;
   font-size: 100%;
@@ -500,7 +614,7 @@ section h1 {
   font-weight: bold;
   margin: 0;
   color: white;
-  background-image: linear-gradient(to top, #131E29, #7142F3, #131E29);
+  background-image: linear-gradient(to top, #131E29, #450fda, #131E29);
   padding: 15px;
 }
 section h1 span {
@@ -529,29 +643,26 @@ section .Titulos1 {
 
 .tipo-prenda {
   display: flex;
-  justify-content: flex-start start;
-  align-items: flex-end;
+  width: 100%;
 }
 .tipo-prenda ul {
   list-style-type: none;
   display: flex;
-  margin-left: 60px;
-  margin-top: 50px;
-  gap: 50px;
+  margin: 10px;
+  padding: 20px 82px;
+  gap: 5px;
 }
 .tipo-prenda ul li {
-  margin-left: 20px;
+  margin: 1px 10px;
 }
 .tipo-prenda ul li a {
   color: #00FFB2;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   margin-left: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   transition: 0.5s;
-  margin: 2px;
+  margin: 2px 10px;
 }
 
 .tipo-prenda a:hover {

@@ -1,26 +1,23 @@
  //botones enlaces*/
 .tipo-prenda {
     display: flex;
-    justify-content: flex-start start;
-    align-items: flex-end;
+    width: 100%;
     ul {
         list-style-type: none;
         display: flex;
-        margin-left: 60px;
-        margin-top: 50px;
-        gap: 50px;
+        margin: 10px;
+        padding: 20px 82px;
+        gap: 5px;
         li {
-            margin-left: 20px;
+            margin: 1px 10px;
             a {
                 color: #00FFB2;
                 text-decoration: none;
-                display: flex;
-                align-items: center;
                 margin-left: 5px;
                 font-family: "Roboto", sans-serif;
                 font-size: 20px;
                 transition: 0.5s;
-                margin: 2px;
+                margin: 2px 10px;
             }
         }
     }
