@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #F6FCDF;
+  background-color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -848,8 +848,8 @@ footer .caja03 .libro {
   font-family: "Roboto", sans-serif;
   font-size: 80%;
   font-weight: bold;
-  color: #F6FCDF;
-  background-color: #F6FCDF;
+  color: white;
+  background-color: white;
   border-radius: 1px;
   text-decoration: none;
   transition: 0.5s;
@@ -865,7 +865,7 @@ footer .caja03 .libro {
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #F6FCDF;
+  background-color: white;
   border-top: 1px solid #131E29;
   margin: 1px;
 }
