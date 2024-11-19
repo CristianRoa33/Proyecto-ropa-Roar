@@ -1,14 +1,24 @@
-@media (width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
     header {
         .navbar {
             display: flex;
             justify-content: space-evenly;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                    }
+        }
+        .logo {
+            margin-right: 70px;
+        }
+        .iconos{
+            display: flex;
         }
     }    
     section .grind-container {                          
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin: 10px 50px;
+        margin: 1% 5%;
         gap: 55px 5px;
         font-size: 12px;
         .AGREGAR {
@@ -31,4 +41,51 @@
         margin: 50px;
     }
 }
+@media (width: 768px) {
+    header {
+        .Banner {
+            display: none;
+        }
+        .navbar .menu {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0;
+            }    
+        }
+        .navbar label {
+            display: inline-flex;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar #toggle:checked ~ .menu {
+            height: 100%;
+        }
+        .iconos{
+            display: none;
+        }
+    }
+    section .grind-container {                          
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 50px;
+        gap: 2px 5px;
+        font-size: 12px;
+        .AGREGAR {
+            display: flex;
+            justify-content: center;
+            width: 310px;
+        }
+    }
+    section .videoclip {
+        width: 750px;
+        margin: 40px 6px;
+    }
+}
+
 
