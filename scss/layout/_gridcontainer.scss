@@ -1,9 +1,12 @@
 /*grind de imagenes de prendas*/
 section {
+    .grind-container{
+        width: 95%;
+    }
     .grind-container {                               
         display: grid;
-        grid-template-columns: repeat(4, minmax(280px, 1fr));
-        margin: 10px 100px;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px 50px;
         border: 1px solid #fff;
         img {
             width: 95%;

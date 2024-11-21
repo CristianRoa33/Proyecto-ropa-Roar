@@ -56,9 +56,12 @@ header .navbar ul li a {
 
 /*grind de imagenes de prendas*/
 section .grind-container {
+  width: 95%;
+}
+section .grind-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 1fr));
-  margin: 10px 100px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 50px;
   border: 1px solid #fff;
 }
 section .grind-container img {
@@ -103,7 +106,7 @@ section .formulario span {
   font-size: 130%;
 }
 
-@media (width: 320px) {
+@media (max-width: 320px) {
   header .Banner {
     display: none;
   }
@@ -131,12 +134,12 @@ section .formulario span {
     display: none;
   }
   .Titulos {
-    font-size: 10px;
+    font-size: 70%;
     font-family: "Roboto", sans-serif;
     color: #FF0000;
   }
   .Titulos1 {
-    font-size: 11px;
+    font-size: 70%;
     font-family: "Roboto", sans-serif;
     color: #FF0000;
   }
@@ -153,16 +156,16 @@ section .formulario span {
     margin: 2px 0px;
   }
   section .grind-container {
-    font-size: 45%;
+    font-size: 48%;
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 1fr);
     margin: 15px 8px;
     gap: 50px 5px;
   }
   section .grind-container .AGREGAR {
     display: flex;
     justify-content: center;
-    width: 142px;
+    width: 95%;
     font-size: 10px;
     background-color: #fff;
     color: #FF0000;
@@ -170,11 +173,11 @@ section .formulario span {
     margin: 1px;
   }
   section .videoclip {
-    width: 310px;
+    width: 95%;
     margin: 40px 6px;
   }
   section .formulario {
-    width: 300px;
+    width: 93%;
     margin: 41px 10px;
     padding: 10px 20px;
     display: flex;
@@ -207,6 +210,7 @@ section .formulario span {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 100%;
   }
   footer .caja02 a {
     margin: 1px 100px;
@@ -219,7 +223,7 @@ section .formulario span {
     text-align: center;
   }
 }
-@media (width: 375px) {
+@media (max-width: 375px) {
   header .Banner {
     display: none;
   }
@@ -661,6 +665,7 @@ section .formulario span {
   }
 }
 section h1 {
+  width: 100%;
   text-align: center;
   font-size: 25px;
   font-family: "Roboto", sans-serif;
@@ -896,7 +901,7 @@ footer .caja03 .libro {
 .AGREGAR {
   display: flex;
   justify-content: center;
-  width: 510px;
+  width: 95%;
   padding: 10px 1px;
   margin: 2px;
   font-family: "Roboto", sans-serif;
