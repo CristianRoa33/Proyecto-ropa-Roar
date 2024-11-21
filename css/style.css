@@ -1,17 +1,491 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 10 | @import "./layout/media375";
- *    |         ^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\style.scss 10:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @import \"./layout/media375\";\a    \2502          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 10:9  root stylesheet";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header .Banner {
+  width: 100%;
+  height: 47px;
+}
+header .navbar #toggle,
+header .navbar label {
+  display: none;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  border: 1px solid #1A1A19;
+  font-family: "Roboto", sans-serif;
+  font-size: 60x;
+}
+header .navbar .logo {
+  width: 7rem;
+}
+header .navbar .imgnavbar {
+  display: flex;
+  gap: 40px;
+}
+header .navbar .imgnavbar .iconos {
+  width: 2.5rem;
+}
+header .navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .navbar ul li {
+  margin-right: 40px;
+}
+header .navbar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*grind de imagenes de prendas*/
+section .grind-container {
+  width: 95%;
+}
+section .grind-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 50px;
+  border: 1px solid #fff;
+}
+section .grind-container img {
+  width: 95%;
+  height: 80%;
+}
+
+/*video*/
+section .videoclip {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 98%;
+  margin-left: 15px;
+}
+
+section .formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #fff;
+  margin: 10px 100px;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 0.5%;
+}
+section .formulario h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+}
+section .formulario h3 {
+  color: #787F86;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+section .formulario span {
+  color: #00FF00;
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+}
+
+@media (max-width: 320px) {
+  header .Banner {
+    display: none;
+  }
+  header .navbar .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+  header .navbar .menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  header .navbar label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  header .navbar #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  header .iconos {
+    display: none;
+  }
+  .Titulos {
+    font-size: 70%;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .Titulos1 {
+    font-size: 70%;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+  }
+  .tallaropa label {
+    font-size: 8px;
+    margin: 8px;
+  }
+  .tipo-prenda {
+    display: flex;
+  }
+  .tipo-prenda ul {
+    display: flex;
+    flex-flow: wrap;
+    margin: 2px 0px;
+  }
+  section .grind-container {
+    font-size: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px 8px;
+    gap: 50px 5px;
+  }
+  section .grind-container .AGREGAR {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    font-size: 10px;
+    background-color: #fff;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    margin: 1px;
+  }
+  section .videoclip {
+    width: 95%;
+    margin: 40px 6px;
+  }
+  section .formulario {
+    width: 93%;
+    margin: 41px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .formulario h2 {
+    font-size: 21px;
+  }
+  section .formulario h3 {
+    font-size: 11px;
+  }
+  section .formulario .etiquetas {
+    font-size: 2px;
+  }
+  section .formulario .item {
+    font-size: 20px;
+  }
+  section .formulario .Suscribirme {
+    width: 170px;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    border: 10px solid #f0f0f0;
+    border-radius: 10px;
+    color: #fff;
+  }
+  footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+  footer .caja02 a {
+    margin: 1px 100px;
+    font-size: 15px;
+    text-align: center;
+  }
+  footer .caja03 a {
+    margin: 1px 100px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+section h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  background-image: linear-gradient(to top, #2D65FF, #A132FF, #C623FF);
+  padding: 15px;
+}
+section h1 span {
+  color: #F6D804;
+}
+section .Titulos h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 250%;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+section .tallaropa {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+section .Titulos1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 250%;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+.tipo-prenda {
+  display: flex;
+  width: 100%;
+}
+.tipo-prenda ul {
+  list-style-type: none;
+  display: flex;
+  margin: 10px;
+  padding: 20px 82px;
+  gap: 5px;
+}
+.tipo-prenda ul li {
+  margin: 1px 10px;
+}
+.tipo-prenda ul li a {
+  color: #4CC9FE;
+  text-decoration: none;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  transition: 0.5s;
+  margin: 2px 10px;
+}
+
+.tipo-prenda a:hover {
+  background-color: #F6FCDF;
+  border-style: none;
+  color: #FF0000;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+section .grind-container h3 {
+  color: #787f86;
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 700;
+  margin: 2px;
+}
+section .grind-container p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+section .grind-contenedor h3 {
+  color: #787f86;
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 700;
+  margin: 2px;
+}
+section .grind-contenedor p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  font-weight: 700;
+}
+
+/*datos de formulario principal*/
+section .Datos {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+section .Datos .item {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 50%;
+}
+section .Datos .item input {
+  border: 1px solid #EA0029;
+  margin-left: 20px;
+  max-width: auto;
+  border-radius: 10px;
+}
+section .Datos .item label {
+  font-size: 20px;
+}
+section .Suscribirme {
+  width: 20%;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  background-color: #EA0029;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 70px;
+}
+
+section .formularios .Datos {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+section .formularios .Datos .item {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 50%;
+}
+section .formularios .Datos .item input {
+  border: 1px solid #EA0029;
+  margin-left: 20px;
+  max-width: auto;
+  border-radius: 10px;
+}
+section .formularios .Datos .item label {
+  font-size: 20px;
+}
+
+footer .caja01 {
+  display: flex;
+  width: 50%;
+  margin: 1px 25px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .caja01 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  margin: 1px;
+}
+footer .caja01 h2 .facebook {
+  width: 3rem;
+}
+footer .caja01 h2 .instagram {
+  width: 3rem;
+}
+footer .caja02 {
+  display: flex;
+  width: 50%;
+  margin: 1px 25px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .caja02 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  margin: 4px;
+}
+footer .caja02 a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #787f86;
+  font-weight: 500;
+  margin: 10px;
+}
+footer .caja02 .mensajes {
+  width: 1.5rem;
+  margin-right: 10px;
+}
+footer .caja02 .telefono {
+  width: 1.5rem;
+}
+footer .caja02 .ubicacion {
+  width: 1.5rem;
+}
+footer .caja03 {
+  display: flex;
+  width: 50%;
+  margin: 1px 25px;
+  color: #000;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .caja03 h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 4px;
+}
+footer .caja03 a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #787f86;
+  font-weight: 500;
+  margin: 10px;
+}
+footer .caja03 .libro {
+  width: 1.5rem;
+  margin-right: 8px;
+}
+
+.AGREGAR {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  padding: 10px 1px;
+  margin: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 80%;
+  font-weight: bold;
+  color: white;
+  background-color: white;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.AGREGAR:hover {
+  background-color: #FF0000;
+  border: 0px solid #FF0000;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-top: 1px solid #131E29;
+  margin: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
