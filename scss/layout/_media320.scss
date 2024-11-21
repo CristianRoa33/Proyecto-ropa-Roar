@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (max-width:768px) {
     header {
         .Banner {
             display: none;
@@ -38,8 +38,8 @@
         color: #FF0000;
     }
     .tallaropa label {
-        font-size: 8px;
-        margin: 8px;
+        font-size: 85%;
+        margin: 1%;
     }
     .tipo-prenda {
         display:flex;
@@ -50,10 +50,10 @@
         }
     }
     section .grind-container {
-        font-size: 48% ;
+        font-size: 55%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 15px 8px;
+        margin: 15px 4%;
         gap: 50px 5px;
         .AGREGAR {
             display: flex;
@@ -67,12 +67,13 @@
         }
     }
     section .videoclip {
-        width: 95%;
-        margin: 40px 6px;
+        width: 90%;
+        margin: 15% 5.5%;
+        height: auto;
     }
     section .formulario {
-        width: 93%;
-        margin: 41px 10px;
+        width: 95%;
+        margin: 41px 3%;
         padding: 10px 20px;
         display: flex;
         flex-direction: column;
