@@ -191,6 +191,10 @@ section .formulario span {
   section .formulario h3 {
     font-size: 11px;
   }
+  section .formulario label {
+    display: flex;
+    justify-content: center;
+  }
   section .formulario .etiquetas {
     font-size: 2px;
   }
