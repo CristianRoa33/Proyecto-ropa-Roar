@@ -14,33 +14,83 @@
     <link rel="stylesheet" href="./css/style.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header> <!--Navegable-->
-        <img src="./asset/Banner.png" alt="Banner" class="Banner">
+        
+        <img src="./asset/Banner.png" alt="Banner publicidad 30% off" class="Banner">
+
         <nav class="navbar">
-            <a href="index.html"><img src="asset/movieslogo.png"alt="inicio movies logo" class="logo"></a>
-            <input type="checkbox" name="" id="toggle">
-            <label for="toggle"><i class="material-icons"><img src="./asset/Menu.png" alt="menu"/></i></label>
-            <div class="menu">
+            <a href="index.html">
+                <img src="asset/movieslogo.png" alt="inicio movies logo" class="logo">
+            </a>
+            
+            <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </button>
+
+            <div class="listaNav" id="listaNav">
+
             <ul>
-                <li><a href="html/hombres.html">HOMBRE</a></li>
-                <li><a href="html/mujeres.html">MUJER</a></li>
-                <li><a href="html/ninos.html">NIÑOS</a></li> 
-                <li><a href="html/ofertas.html">OFERTAS🔥</a></li>
-                </ul>
+                <li>
+                    <a href="html/hombres.html">
+                        HOMBRE
+                    </a>
+                </li>
+                <li>
+                    <a href="html/mujeres.html">
+                        MUJER
+                    </a>
+                </li>
+                <li>
+                    <a href="html/ninos.html">
+                        NIÑOS
+                    </a>
+                </li>
+                <li>
+                    <a href="html/ofertas.html">
+                        OFERTAS🔥
+                    </a>
+                </li>
+            </ul>
+
             </div>    
-            <div class="imgnavbar">
-                <a href=""> <img src="asset/iconoubicacion.png" class="iconos" alt="Ubicación"></a></li>
-                <a href=""> <img src="asset/iconousuario.png" class="iconos" alt="usuario"></a></li>
-                <a href=""> <img src="asset/iconobolsa.png" class="iconos"  alt="bolsa"></a></li>
+
+            <div class="iconos-nav"> <!--iconos de ubicación, usuario y bolsa-->
+                
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="asset/iconoubicacion.png" class="iconos" alt="icono de ubicación">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/iconousuario.png" class="iconos" alt="icono de usuario">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="asset/iconobolsa.png" class="iconos"  alt="icono de bolsa">
+                    </a>
+                    </li>
+
+                </ul>
+
             </div>
+
         </nav>
+
     </header>
+
     <main>
         <section >  <!--codigo de bootstrap-->
+
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -62,15 +112,44 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
         </section>    
+
         <section class="prendas">
-                <div><h1> ⚡️ENVÍO GRATIS POR <span>COMPRAS IGUALES O SUPERIORES</span> A 200.000 COP⚡️</h1></div>
-                <div class="tipo-prenda"> <!--enlaces tipo de prendas-->
-                    <ul>
-                        <li><a href="html/ofertas.html"> ❌Camisetas</a></li><li><a href="html/ofertas.html"> ⭕️Pantalones</a></li><li><a href="html/ofertas.html"> ❌Buzos</a></li>
-                    </ul>        
-                </div>
+           
+            <div class="tipo-prenda"> <!--enlaces tipo de prendas-->
+                <ul>
+                    <li>
+                        <a href="html/ofertas.html"> 
+                            Camisetas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/ofertas.html"> 
+                                Pantalones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/ofertas.html"> 
+                                Buzos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="html/ofertas.html"> 
+                                Inferiores
+                            </a>
+                        </li>
+                    </ul>   
+
+                    <div class="linea-vertical">
+                        <span class="vermas">Ver más</span>
+                        <button class = "flecha izquierda" id="flecha-izquierda"> < </button>
+                        <button class = "flecha derecha" id="flecha-derecha">  > </button>
+                    </div> 
+            </div>
+
         </section>
+
         <section>
             <div class="grind-container"> <!--imagenes de la ropa-->
                 <div class="grid-item-01">
@@ -99,13 +178,15 @@
                 </div>
             </div>
         </section>
+
         <section>    
             <video class="videoclip" src="./asset/video ropa.mp4"  controls autoplay muted loop ></video>
         </section>
+
         <section>    
             <div class="formulario">    <!--formulario-->
-            <h2>LA HISTORIA CONTINÚA...</h2>
-            <h3>SUSCRÍBETE Y ENTÉRATE DE LANZAMIENTOS EXCLUSIVOS, NUEVAS COLECCIONES Y DESCUENTOS ESPECIALES.<span> ¡Recibe 15% OFF EN TU PRIMERA COMPRA!</span></h3>
+            <h3>LA HISTORIA CONTINÚA...</h3>
+            <h4>SUSCRÍBETE Y ENTÉRATE DE LANZAMIENTOS EXCLUSIVOS, NUEVAS COLECCIONES Y DESCUENTOS ESPECIALES.<span> ¡Recibe 15% OFF EN TU PRIMERA COMPRA!</span></h4>
             <form  class="Datos" action="">
                 <div class="item" style="flex-grow: 3;">
                     <label for="nombresyapellidos">Nombres y Apellidos</label>
@@ -138,6 +219,7 @@
             </form>
         </section>
     </main>
+
     <footer>
         <div class="caja01"><h2>SIGUENOS</h2>
         <a href="https://es-la.facebook.com/"><img src="asset/Facebook.png" class="facebook" alt="Facebook"></a>
@@ -150,6 +232,10 @@
         <div class="caja03"><h3>ACERCA DE NOSOTROS</h3>
         <a href="Nuestrahistoria.html"> <img src="asset/libro.gif"  class="libro" alt="libro">Nuestra historia</a></div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+    </script>
+
 </body>
 </html>
